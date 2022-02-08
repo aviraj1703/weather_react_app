@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Source+Serif+4:ital,wght@1,700&display=swap');
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body{
+  background-color: rgb(156, 226, 191);
+}
+.Main {
+  width: 25vw;
+  height: 80vh;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 7vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+  background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
+  box-sizing: border-box;
+  box-shadow: -2px -2px 10px 8px rgb(116, 170, 143);
+}
+.input{
+  width: 100%;
+  height: 10%;
+  padding: 1%;
+  margin-top: 3%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.input input{
+  outline: none;
+  border: none;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 1.65rem;
+  color: blueviolet;
+  text-transform: capitalize;
+  border-radius: 30px;
+  width: 80%;
+  height: 90%;
+  box-shadow: -1px 1px 3px 3px rgb(214, 213, 213);
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+.input input::placeholder{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.container{
+  width: 100%;
+  height: 90%;
+  padding: 1%;
+  margin: 0.5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.container .city{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+  padding: 1%;
+  margin: 1%;
+}
+.container .city .fas{
+  height: 90%;
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .city .fa-map-marker-alt{
+  color: crimson;
+  font-size: 3rem;
+  text-shadow: 2px 2px 3px rgb(146, 13, 40);
+  animation: locate 2s ease-in-out 5ms infinite alternate-reverse;
+}
+.container .city .fa-plane{
+  color: crimson;
+  font-size: 3rem;
+  text-shadow: 2px 2px 3px rgb(146, 13, 40);
+  text-align: left;
+  animation: moveOn 5s ease-in-out 5ms infinite alternate;
+}
+.container .city h1{
+  font-family: 'Comfortaa', cursive;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px rgb(75, 63, 65);
+  text-transform: capitalize;
+  flex-wrap: wrap;
+}
+@keyframes locate {
+  from{
+    transform: translateX(-5px) scale(1);
+  }
+  To{
+    transform: translateX(10px) scale(0.95);
+  }
+}
+@keyframes moveOn {
+  from{
+    transform: translateX(0px) scale(1);
+  }
+  To{
+    transform: translateX(80px) translateY(-40px) rotateZ(-30deg);
+  }
+}
+.container .temp{
+  box-sizing: border-box;
+  padding: 1%;
+  margin: 1%;
+  margin-top: 2%;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.container .temp h1{
+  font-family: 'Source Serif 4', sans-serif;
+  text-shadow: 1px 1px 2px rgb(75, 63, 65);
+  margin: 0.5%;
+}
+.container .temp p{
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0.5%;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.animate {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  margin: 0.5%;
+}
+.animate img{
+  width: 150%;
+  height: auto;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  animation: showw 5s ease-in-out 5ms infinite alternate-reverse;
+}
+@keyframes showw {
+  from{
+    transform: translateX(-80px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+
+/* Media query */
+@media only screen and (max-width: 400px) {
+  .Main{
+    width: 90vw;
+    height: 60vh;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .Main{
+    width: 90vw;
+    height: 60vh;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .input{
+    height: 8%;
+  }
+  .input input{
+    font-size: 1.05rem;
+  }
+  .input input::placeholder{
+    font-size: 1rem;
+  }
+  .container .city{
+    height: 25%;
+  }
+  .container .city .fa-map-marker-alt{
+    font-size: 2.2rem;
+  }
+  .container .city .fa-plane{
+    font-size: 2.2rem;
+    animation: moveOn 5s ease-in-out 5ms infinite alternate;
+  }
+  @keyframes moveOn {
+    from{
+      transform: translateX(0px) scale(1);
+    }
+    To{
+      transform: translateX(50px) translateY(-40px) rotateZ(-30deg);
+    }
+  }
+  .container .city h1{
+    word-wrap: break-word;
+    font-size: 1.3rem;
+    flex-wrap: wrap;
+  }
+  .container .temp{
+    height: 23%;
+  }
+  .container .temp h1{
+    font-size: 1.4rem;
+  }
+  .container .temp p{
+    font-size: 1rem;
+  }
+  .container .animate{
+    height: 47%;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 900px) {
+  .input{
+    height: 8%;
+  }
+  .input input{
+    font-size: 1.1rem;
+  }
+  .input input::placeholder{
+    font-size: 1rem;
+  }
+  .container .city{
+    height: 25%;
+  }
+  .container .city .fa-map-marker-alt{
+    font-size: 2.5rem;
+  }
+  .container .city .fa-plane{
+    font-size: 2.2rem;
+    animation: moveOn 5s ease-in-out 5ms infinite alternate;
+  }
+  @keyframes moveOn {
+    from{
+      transform: translateX(0px) scale(1);
+    }
+    To{
+      transform: translateX(70px) translateY(-40px) rotateZ(-30deg);
+    }
+  }
+  .container .city h1{
+    word-wrap: break-word;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .container .temp{
+    height: 23%;
+  }
+  .container .temp h1{
+    font-size: 1.5rem;
+  }
+  .container .temp p{
+    font-size: 1rem;
+  }
+  .container .animate{
+    height: 47%;
+  }
+}
