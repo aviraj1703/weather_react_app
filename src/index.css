@@ -166,20 +166,20 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 /* Media query */
 @media only screen and (max-width: 400px) {
   .Main{
-    width: 70vw;
-    height: 80vh;
+    width: 65vw;
+    height: 85vh;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 550px) {
   .Main{
     width: 60vw;
-    height: 85vh;
+    height: 90vh;
   }
 }
-@media only screen and (min-width: 550px) and (max-width: 1100px) {
+@media only screen and (min-width: 550px) and (max-width: 800px) {
   .Main{
     width: 60vw;
-    height: 80vh;
+    height: 90vh;
   }
 }
 @media only screen and (max-width: 400px) {
