@@ -170,9 +170,15 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     height: 60vh;
   }
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (min-width: 400px) and (max-width: 550px) {
   .Main{
     width: 60vw;
+    height: 70vh;
+  }
+}
+@media only screen and (min-width: 550px) and (max-width: 1100px) {
+  .Main{
+    width: 70vw;
     height: 60vh;
   }
 }
