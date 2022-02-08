@@ -167,19 +167,19 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 @media only screen and (max-width: 400px) {
   .Main{
     width: 90vw;
-    height: 60vh;
+    height: 70vh;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 550px) {
   .Main{
     width: 60vw;
-    height: 70vh;
+    height: 80vh;
   }
 }
 @media only screen and (min-width: 550px) and (max-width: 1100px) {
   .Main{
-    width: 70vw;
-    height: 60vh;
+    width: 90vw;
+    height: 50vh;
   }
 }
 @media only screen and (max-width: 400px) {
