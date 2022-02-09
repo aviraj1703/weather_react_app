@@ -7,8 +7,8 @@ body{
   background-color: rgb(156, 226, 191);
 }
 .Main {
-  width: 25vw;
-  height: 80vh;
+  width: 300px;
+  height: 500px;
   border-radius: 10px;
   margin: auto;
   margin-top: 7vh;
@@ -30,6 +30,7 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  /* border: 1px solid black; */
 }
 .input input{
   outline: none;
@@ -70,10 +71,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 30%;
+  height: 28%;
   box-sizing: border-box;
   padding: 1%;
   margin: 1%;
+  /* border: 1px solid black; */
 }
 .container .city .fas{
   height: 90%;
@@ -124,11 +126,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   margin: 1%;
   margin-top: 2%;
   width: 100%;
-  height: 20%;
+  height: 22%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  /* border: 1px solid black; */
 }
 .container .temp h1{
   font-family: 'Source Serif 4', sans-serif;
@@ -145,7 +148,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   width: 100%;
   height: 50%;
   overflow: hidden;
-  margin: 0.5%;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
 }
 .animate img{
   width: 150%;
@@ -166,20 +170,20 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 /* Media query */
 @media only screen and (max-width: 400px) {
   .Main{
-    width: 65vw;
-    height: 85vh;
+    width: 200px;
+    height: 400px;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 550px) {
   .Main{
-    width: 60vw;
-    height: 90vh;
+    width: 230px;
+    height: 430px;
   }
 }
-@media only screen and (min-width: 550px) and (max-width: 800px) {
+@media only screen and (min-width: 550px) and (max-width: 1100px) {
   .Main{
-    width: 60vw;
-    height: 90vh;
+    width: 250px;
+    height: 450px;
   }
 }
 @media only screen and (max-width: 400px) {
