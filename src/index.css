@@ -170,14 +170,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 /* Media query */
 @media only screen and (max-width: 400px) {
   .Main{
-    width: 200px;
-    height: 400px;
+    width: 230px;
+    height: 430px;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 550px) {
   .Main{
-    width: 230px;
-    height: 430px;
+    width: 250px;
+    height: 450px;
   }
 }
 @media only screen and (min-width: 550px) and (max-width: 1100px) {
